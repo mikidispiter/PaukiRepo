@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mikidispiter.myapplication.MainActivity">
+
+    <TextView
+        android:paddingTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/please_choose_cofee_type"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#100000" />
+
+
+    <LinearLayout
+        android:paddingRight="4dp"
+        android:paddingLeft="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/prazna1"
+                android:background="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/no"/>
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:background="#FFF"
+                android:layout_margin="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="turska"
+                android:src="@drawable/turska" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/prazna2"
+                android:background="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/no"/>
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:background="#FFF"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="makiato"
+            android:src="@drawable/viena" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/prazna3"
+                android:background="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/no"/>
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:background="#FFF"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="tri"
+            android:src="@drawable/tri" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/turskaText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/turska"
+            android:textAlignment="center"
+            android:textColor="#100000" />
+
+        <TextView
+            android:id="@+id/makiatoText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/makiato"
+            android:textAlignment="center"
+            android:textColor="#100000"/>
+
+        <TextView
+            android:id="@+id/triText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/_3_u_1"
+            android:textAlignment="center"
+            android:textColor="#100000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/slagnes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/slag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="slag"
+            android:text="@string/slag" />
+
+        <CheckBox
+            android:id="@+id/nesquik"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="nesquik"
+            android:text="@string/nesquik" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cenanaslov"
+            android:textAlignment="center"
+            android:textColor="#100000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp">
+
+            <TextView
+                android:id="@+id/cena"
+                android:layout_width="0dp"
+                android:layout_height="16dp"
+                android:layout_weight="1"
+                android:text="@string/cena"
+                android:textAlignment="center"
+                android:textColor="#100000" />
+
+            <TextView
+                android:id="@+id/uplnacena"
+                android:layout_width="0dp"
+                android:layout_height="16dp"
+                android:layout_weight="1"
+                android:text="@string/uplnacena"
+                android:textAlignment="center"
+                android:textColor="#100000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/decrease"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="2"
+                android:background="@color/colorPrimary"
+                android:onClick="dec"
+                android:padding="0dp"
+                android:text="@string/minus"
+                android:textSize="24sp" />
+
+            <TextView
+                android:textColor="#FFF"
+                android:id="@+id/broj"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="@string/a0"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/increase"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="2"
+                android:background="@color/colorPrimary"
+                android:onClick="inc"
+                android:padding="0dp"
+                android:text="@string/plus"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/naucet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="naucet"
+            android:text="@string/dodaj_kavu_na_ucet"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/zakonci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:onClick="zakonci"
+            android:text="@string/zakonci"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+</LinearLayout>

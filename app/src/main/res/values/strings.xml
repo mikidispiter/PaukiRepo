@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Miukinova kafana</string>
+    <string name="a0">0</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="please_choose_cofee_type">Vyberte si z tej kave prosim</string>
+    <string name="turska">Turska x 0</string>
+    <string name="makiato">Makiato x 0</string>
+    <string name="_3_u_1">3 u 1 x 0</string>
+    <string name="slag">slag</string>
+    <string name="nesquik">nesquik</string>
+    <string name="dodaj_kavu_na_ucet">Dodaj kavu na ucet</string>
+    <string name="zakonci">Zakonci</string>
+    <string name="cena">0 din</string>
+    <string name="uplnacena">0 din</string>
+    <string name="cenanaslov">Cena</string>
+</resources>
